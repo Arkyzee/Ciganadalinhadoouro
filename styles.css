@@ -1,0 +1,352 @@
+body{
+    width:auto;
+    height:auto;
+    overflow-x:hidden;
+    font-family: 'Lobster', cursive;
+    white-space:nowrap;
+}
+header h1,header p{
+    color:rgb(177, 177, 0);
+}
+.cabecalhofixo{
+    display:flex;
+    background:linear-gradient(90deg,black,rgb(31, 31, 31));
+    width:100%;
+    justify-content:space-between; 
+}
+.logo{
+    width:10vw;
+    height:10vw;
+}
+.cabecalhofixo ul{
+    display:flex;
+    padding-top:4%;
+    padding-right:2%;
+}
+.cabecalhofixo li{
+    color:rgb(177,177,0);
+    margin-left:2vw;
+    list-style:disc;
+    font-size:1.5vw;
+}
+.cabecalhofixo a{
+    text-decoration:none;
+}
+.cabecalhofixo p{
+    font-size:1.5vw;
+    text-align:center;
+}
+.cabecalhofixo p:hover{
+    color:white;
+}
+.bannercabecalho{
+    display:flex;
+    justify-content:left;
+    width:100%;
+    height:55vw;
+    max-height:max-content;
+    background-image:url("tarologa.jpg");
+    background-size:100%;
+    background-repeat:no-repeat;
+    
+}
+.bannercabecalho h1{
+    color:rgb(177, 177, 0);
+    font-size:8vw;
+    padding:30% 0 0 5%;
+    letter-spacing:0.1em;
+    -webkit-text-stroke:0.3vw black;
+}
+.espacoembranco{
+    height:1vw;
+}
+main{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    flex-direction:column;
+    background: linear-gradient(90deg,black,rgb(80,0,0));
+}
+main h1{
+    font-size:5vw;
+    color:white;
+    padding-top:1vw;   
+}
+main h2{
+    font-size:1.3vw;
+    color:rgb(177, 177, 0);
+    letter-spacing:0.5vw;
+    text-transform:uppercase;
+    padding-top:1vw;
+}
+main p{
+    padding-top:1vw;
+    color:rgb(164, 164, 164);
+    font-size:1.5vw;
+}
+#sobre-mim{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+}
+video{
+    padding-top:1vw;
+    width:60vw;
+}
+#servicos{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+}
+#servicos h3{
+    font-size:1.5vw;
+    color:rgb(177, 177, 0);
+    text-transform:uppercase;
+    padding-top:1vw;
+}
+#servicos ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+#servicos li{
+    padding:1vw;
+    width:20%
+}
+#servicos img{
+    width:15vw;
+    height:15vw;
+}
+#contato{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+    flex-wrap:wrap;
+}
+#contato form{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    padding-top:1vw;
+}
+#contato label{
+    font-size:1.5vw;
+    color:rgb(177, 177, 0);
+    padding:1vw 0 2vw 0;
+    
+}
+#contato input{
+    width:30%;
+    height:2vw;
+}
+#contato #texto{
+    width:50vw;
+    height:1vw;
+    padding-bottom:20vw;
+    margin:2vw 6vw 2vw 2vw;
+}
+.botao{
+    width:100vw;
+    height:10vw 
+}
+#botaoenviar{
+    border:none;
+    text-decoration:none;
+    background-color:rgb(0, 0, 0);
+    color:rgb(177, 177, 0);
+    width:15vw;
+    height:3vw;
+    border-radius:10%;
+    font-size:2vw;
+    font-family: 'Lobster', cursive;
+    margin:2vw;
+    transition:1s;
+}
+#botaoenviar:hover{
+    width:13vw;
+    height:4vw;;
+    transition:1s;
+    cursor:pointer;
+}
+footer{
+    display:flex;
+    background:linear-gradient(90deg,black,rgb(31, 31, 31));
+    flex-direction:row;
+    justify-content:space-between;
+}
+footer .logo{
+    padding-top:1.5vw;
+}
+footer ul{
+    margin:0 2vw 0 0;
+    padding-top:1vw;
+    display:flex;
+    flex-direction:column;
+}
+footer li{
+    padding-bottom:2vw;
+    display:flex;
+    flex-direction:row;
+}
+footer p{
+    padding:0.5vw;
+    text-align:right;
+    color:white;
+    font-size:1vw;
+
+}
+footer .icon{
+    width:2vw;
+}
+.fundo-whatsapp{
+    display:flex;
+    flex-direction:row-reverse;
+    width:10vw;
+    height:2vw;
+    position:fixed;
+    right:-7%;
+    bottom:26%;
+    background-color:rgb(0, 152, 10);
+    border-radius:10%;
+    transition:1s;
+
+}
+.whatsapp{
+    position:fixed;
+    right:-0.5%;
+    bottom:25%;
+    width:3vw;
+}
+.fundo-whatsapp p{
+    color:white;
+    width:3vw;
+    transition:1s;
+    padding:0.2vw 6vw 0 0;
+}
+.fundo-whatsapp:hover{
+    transition:1s;
+    padding-right:7vw;
+}
+
+@media screen and (max-width:600px){
+    .cabecalhofixo{
+        flex-wrap:wrap;
+        flex-direction:row;
+        justify-content:center;
+        text-align:center;
+    }
+    .logo{
+        width:20vw;
+        height:20vw;
+    }
+    .cabecalhofixo ul{
+        padding-top:8vw;
+    }
+    .cabecalhofixo li{
+        list-style-type:none;
+        padding-right:1.3vw;
+    }
+    .cabecalhofixo p{
+        font-size:5vw;
+    }
+    .bannercabecalho{
+        justify-content: center;
+    }
+    .bannercabecalho h1{
+        padding-top:20vw;
+        font-size:20vw;
+        -webkit-text-stroke:0.5vw black;
+    }
+    main h1{
+        padding-top:20vw;
+        font-size: 15vw;
+    }
+    main h2{
+        font-size:6.5vw;
+    }
+    #sobre-mim video{
+        width:95vw;
+    }
+    #sobre-mim p{
+        font-size:3.5vw
+    }
+    #servicos li{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        justify-content:center;
+        width:95vw;
+    }
+    #servicos img{
+        width:70vw;
+        height:70vw;
+        padding:5vw 0 0 15vw;
+    }
+    #servicos h3{
+        font-size:8vw;
+
+    }
+    #servicos p{
+        font-size:6vw;
+    }
+    #contato input{
+        width:80vw;
+        height:5vw;
+    }
+    #contato label{
+        padding-top:8vw;
+        font-size:6vw;
+    }
+    #contato .texto{
+        width:95vw;
+        display:flex;
+        flex-direction:column; 
+        text-align:center;
+        justify-content:center;  
+    }
+    #texto{
+        padding-right:45vw;
+    }
+    footer{
+        flex-direction:row;
+        justify-content:center;
+    }
+    footer .logo{
+        padding:7.5vw 0 0 10vw;
+    }
+    footer ul{
+        width:95vw;
+        flex-direction:column;
+        padding-bottom:5vw;
+    }
+    footer .icon{
+        padding:5vw 0 0 10vw;
+        width:4vw;
+        height:4vw;
+    }
+    footer p{
+        font-size:3vw;
+        padding-top:6vw;
+    }
+    .whatsapp{
+        width:10vw;
+    }
+    .fundo-whatsapp{
+        width:25vw;
+        height:10vw;
+        bottom:25%;
+        right:0;
+    }
+    .fundo-whatsapp p{
+        position:fixed;
+        font-size:3vw;
+        bottom:27%;
+        right:15%;
+    }
+}  
