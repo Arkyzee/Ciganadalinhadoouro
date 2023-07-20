@@ -277,16 +277,13 @@ footer .icon{
         font-size:3.5vw
     }
     #servicos li{
-        display:flex;
-        flex-direction:column;
         text-align:center;
-        justify-content:center;
-        width:95vw;
+        width:auto;
     }
     #servicos img{
-        width:70vw;
-        height:70vw;
-        padding:5vw 0 0 15vw;
+        width:60vw;
+        height:60vw;
+        padding:5vw;
     }
     #servicos h3{
         font-size:8vw;
@@ -336,17 +333,18 @@ footer .icon{
     }
     .whatsapp{
         width:10vw;
+        bottom:60%;
     }
     .fundo-whatsapp{
         width:25vw;
         height:10vw;
-        bottom:25%;
+        bottom:60%;
         right:0;
     }
     .fundo-whatsapp p{
         position:fixed;
         font-size:3vw;
-        bottom:27%;
+        bottom:62%;
         right:15%;
     }
 }  
